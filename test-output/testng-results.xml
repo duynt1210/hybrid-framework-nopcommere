@@ -1,33 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-15T13:08:27Z" name="Default suite" finished-at="2025-02-15T13:08:27Z" duration-ms="25">
+  <suite started-at="2025-03-07T17:18:42Z" name="Default suite" finished-at="2025-03-07T17:18:45Z" duration-ms="2572">
     <groups>
     </groups>
-    <test started-at="2025-02-15T13:08:27Z" name="Default test" finished-at="2025-02-15T13:08:27Z" duration-ms="25">
-      <class name="com.nopcommerce.user.User_01_Register">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.User_01_Register@18271936]" started-at="2025-02-15T13:08:27Z" name="beforeClass" finished-at="2025-02-15T13:08:27Z" duration-ms="6" status="PASS">
+    <test started-at="2025-03-07T17:18:42Z" name="Default test" finished-at="2025-03-07T17:18:45Z" duration-ms="2572">
+      <class name="com.nopcommerce.admin.TestAdmin">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.nopcommerce.admin.TestAdmin@28261e8e]" started-at="2025-03-07T17:18:42Z" name="BeforeClass" finished-at="2025-03-07T17:18:43Z" duration-ms="821" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01()[pri:0, instance:com.nopcommerce.user.User_01_Register@18271936]" started-at="2025-02-15T13:08:27Z" name="TC_01" finished-at="2025-02-15T13:08:27Z" duration-ms="5" status="PASS">
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="TC01_openBrowser()[pri:0, instance:com.nopcommerce.admin.TestAdmin@28261e8e]" started-at="2025-03-07T17:18:43Z" name="TC01_openBrowser" finished-at="2025-03-07T17:18:45Z" duration-ms="1740" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nav-link active']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'PC1145151', ip: '192.168.24.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b321e3a750f7acc2baa6cab26bb1111d
+*** Element info: {Using=xpath, value=//a[@class='nav-link active']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nav-link active']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'PC1145151', ip: '192.168.24.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b321e3a750f7acc2baa6cab26bb1111d
+*** Element info: {Using=xpath, value=//a[@class='nav-link active']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.nopcommerce.admin.TestAdmin.TC01_openBrowser(TestAdmin.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_02()[pri:0, instance:com.nopcommerce.user.User_01_Register@18271936]" started-at="2025-02-15T13:08:27Z" name="TC_02" finished-at="2025-02-15T13:08:27Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02 -->
-        <test-method signature="TC_03()[pri:0, instance:com.nopcommerce.user.User_01_Register@18271936]" started-at="2025-02-15T13:08:27Z" name="TC_03" finished-at="2025-02-15T13:08:27Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.User_01_Register@18271936]" started-at="2025-02-15T13:08:27Z" name="afterClass" finished-at="2025-02-15T13:08:27Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.User_01_Register -->
+        </test-method> <!-- TC01_openBrowser -->
+      </class> <!-- com.nopcommerce.admin.TestAdmin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
